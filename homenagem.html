@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <title>Dia das Mães</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="40" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars"></i></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">FELIZ DIAS DAS MÃES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="homenagem.html">Homenagem</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <!--NigthMode-->
+                        <button type="button" class="btn btn-dark nightmode" onclick="darkmode()"><i class="fas fa-moon"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!--Counteiner main-->
+        <main>
+
+            <video autoplay muted loop id="myVideo" class="fixed-top">
+                <source src="video/background.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+
+
+
+            <div class="content fixed-bottom">
+                <h1>"PARA SEMPRE" - ANIMAÇÃO 2D EM HOMENAGEM A TODAS AS MÃES</h1>
+                <p>O video "PARA SEMPRE", leva através da animação uma homenagem às mães, utilizando a inspiração do poeta CARLOS DRUMMOND DE ANDRADE em seu poema de mesmo nome, como uma mensagem de carinho e reconhecimento nesta data especial. O filme é
+                    uma iniciativa da Produtora Casulo Estúdio com o apoio de grandes empresas de Montes Claros. Apoio: BEM ESTAR, BOOTS, COLÉGIO SÓLIDO, CUIDAR, FIPMOC, NEXT IDIOMAS, NATURE GIFT, OK TINTAS.</p>
+                <button id="myBtn" onclick="Functionvideo()">Pause</button>
+            </div>
+
+
+
+        </main>
+
+        <!-- Javascript-->
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/nightmode.js"></script>
+</body>
+
+</html>

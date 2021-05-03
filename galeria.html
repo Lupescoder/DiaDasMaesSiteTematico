@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <title>Dia das Mães</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="40" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars"></i></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">FELIZ DIAS DAS MÃES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="homenagem.html">Homenagem</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <!--NigthMode-->
+                        <button type="button" class="btn btn-dark nightmode" onclick="darkmode()"><i class="fas fa-moon"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--Carousel-->
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="img/banner.png" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner1.png " class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/banner2.png" class="d-block w-100 img-fluid" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!--Counteiner main-->
+    <main>
+
+
+        <div class="album py-5 ">
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-lg">
+                            <img src="img/galeria.jpg" width="100%" height="225" class="bd-placeholder-img card-img-top" alt="">
+
+                            <div class="card-body">
+                                <p class="card-text">O amor que sinto por você é capaz de mudar o mundo, minha mãe! Não existe nome para o sentimento que me une a você. Amor é pouco para definir o que sinto pela pessoa mais importante de minha vida: você. O orgulho que tenho
+                                    em você é do tamanho do mar onde todo mundo se refresca. Nunca conheci alguém tão guerreiro e tão batalhador como você. Nem em filme ou seriado. Você é a heroína de minha vida.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                            View
+                                          </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/galeria1.png" width="100%" height="225" class="bd-placeholder-img card-img-top" alt="">
+
+                            <div class="card-body">
+                                <p class="card-text">Mãe é palavra poderosa que toca qualquer um. É sinônimo de amor forte e incondicional. Um amor que não se baseia no sangue que se tem em comum, mas na afeição que se desenvolve no coração. É uma ligação que não se explica
+                                    em palavras, mas que se demonstra em sentimentos. E é por isso que quando falo de você, sei que me refiro a alguém que me marcou de uma forma tão profunda, que usar a palavra mãe nunca será exagerado.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            View
+                                          </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/galeria2.jpg" width="100%" height="225" class="bd-placeholder-img card-img-top" alt="">
+
+                            <div class="card-body">
+                                <p class="card-text">Pode este mundo ter, em algum lugar, alguma mãe mais especial do que a minha? Eu digo que não, com todas as forças que moram em mim e defendo esta convicção com as inúmeras razões que me levam a acreditar nisso. Eu não
+                                    abdicaria de você por nada que me pudessem dar em troca e todos os dias agradeço por ter nascido do ventre de uma mulher tão incrível.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                            View
+                                          </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/galeria3.jpg" width="100%" height="225" class="bd-placeholder-img card-img-top" alt="">
+
+                            <div class="card-body">
+                                <p class="card-text">Você é a melhor mãe do mundo! Sinto por você um amor incondicional, eterno, ímpar. Sinto que sou profundamente abençoado em ter seu amor em minha vida. Você sempre representou o melhor que existe no mundo e nas pessoas.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                            View
+                                          </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/galeria4.jpg" width="100%" height="225" class="bd-placeholder-img card-img-top" alt="">
+
+                            <div class="card-body">
+                                <p class="card-text">Meu Deus, a Ti eu agradeço a bênção maravilhosa, a infinita graça com que me agraciaste, e que vive e dá pelo nome de Mãe. A minha é a mais sublime das mães, e a mais extraordinária das mulheres!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                            View
+                                          </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="img/galeria5.jpg" width="100%" height="225" class="bd-placeholder-img card-img-top" alt="">
+
+                            <div class="card-body">
+                                <p class="card-text">Você é e sempre será uma mulher de verdade, um ser humano incrível e uma mãe maravilhosa. Tenho a felicidade de seu sangue correr nas minhas veias e meu nome no seu coração. </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+                                            View
+                                          </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 1 -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mamãe Rainha</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/galeria.jpg" width="400" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 2 -->
+        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel2">Melhor Mãe do Mundo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/galeria1.png" width="400" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 3 -->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Te Amo</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/galeria2.jpg" width="400" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 4 -->
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Afeto Força e Ternura</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/galeria3.jpg" width="400" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 5 -->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Feliz Dias das Mães</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/galeria4.jpg" width="400" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal 6 -->
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Poema</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="img/galeria5.jpg" width="400" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy;2021 : Todos os Direitos Reservados : Desenvolvido por Wesley Lopes</p>
+    </footer>
+    <!-- Javascript-->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/nightmode.js"></script>
+</body>
+
+</html>

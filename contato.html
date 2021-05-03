@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <title>Dia das Mães</title>
+</head>
+
+<body>
+
+    <header>
+
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" width="40" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fas fa-bars"></i></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">FELIZ DIAS DAS MÃES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="homenagem.html">Homenagem</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <!--NigthMode-->
+                        <button type="button" class="btn btn-dark nightmode" onclick="darkmode()"><i class="fas fa-moon"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!--Carousel-->
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="img/banner.png" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/banner1.png " class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item ">
+                    <img src="img/banner2.png" class="d-block w-100 img-fluid" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon " aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!--Counteiner main-->
+    <main>
+
+        <div class="container px-4">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="autor  col-lg-4 offset-4 ">
+                        <img class="bd-placeholder-img rounded-circle" width="140" height="140" src="https://cdn.discordapp.com/attachments/837426993024073728/838809084048310363/02_COLACAO_016108_X02M08_IMG_1438.JPG" alt="" srcset="">
+
+                        <h2>Wesley Lopes</h2>
+                        <p><i class="fas fa-code"></i> Programador</p>
+                        <p><i class="fab fa-html5"></i> HTML</p>
+                        <p><i class="fab fa-css3-alt"></i> CSS</p>
+                        <p><i class="fab fa-js-square"></i> JavaScript</p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-md btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#perfil">
+                        Redes Sociais
+                        </button> </div>
+                </div>
+                <div class="col">
+                    <div class="contatos w-50 offset-3 ">
+                        <h2>Contatos</h2>
+                        <div class="mb-3">
+                            <label for="Nome" class="form-label">Nome :</label>
+                            <input type="text" class="form-control" id="Nome" placeholder="Digite seu nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email: </label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="assunto" class="form-label">Assunto: </label>
+                            <input type="text" class="form-control" id="assunto" placeholder="Digite um assunto">
+                        </div>
+                        <div class="mb-3">
+                            <label for="msg" class="form-label">Mensagem: </label>
+                            <textarea class="form-control" id="msg" rows="3" placeholder="Digite sua Mensagem"></textarea>
+                            <br>
+                            <button type="button" class="btn btn-md btn-outline-secondary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="perfil" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="perfilLabel">Redes Sociais</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <a target="_blank" href="https://github.com/Lupescoder"><i class="fab fa-github fa-2x">GitHub</i><br><br></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/wesleylopess/"><i class="fab fa-linkedin fa-2x">Linkedin</i><br><br></a>
+                        <a target="_blank" href="https://www.instagram.com/wesleylupes/"><i class="fab fa-instagram fa-2x">Instagram</i></a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>&copy;2021 : Todos os Direitos Reservados : Desenvolvido por Wesley Lopes</p>
+    </footer>
+    <!-- Javascript-->
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/nightmode.js"></script>
+</body>
+
+</html>

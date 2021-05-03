@@ -1,0 +1,128 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        text-align: center;
+        background-color: rgb(255, 223, 228);
+    }
+    
+    .sobre {
+        text-align: justify;
+    }
+    
+    .nightmode {
+        margin-left: 10px;
+    }
+    
+    .dark-mode {
+        background-color: rgba(42, 42, 46, 1);
+        color: white;
+    }
+    
+    .dark-mode footer {
+        background-color: rgb(17, 17, 19);
+        color: white;
+    }
+    
+    .dark-mode nav {
+        background-color: rgb(17, 17, 19);
+        color: white;
+    }
+    
+    .dark-mode nav div span i {
+        color: white;
+    }
+    
+    .dark-mode main div {
+        background-color: rgba(42, 42, 46, 1);
+    }
+    
+    .navbar-toggler {
+        border-color: grey;
+    }
+    
+    .dark-mode ul li a {
+        background-color: rgb(17, 17, 19);
+        color: white;
+    }
+    
+    nav div span i {
+        color: rgb(17, 17, 19);
+    }
+    
+    .navbar {
+        background-color: pink;
+        opacity: 95%;
+    }
+    
+    .navbar a {
+        color: rgb(17, 17, 19);
+        text-decoration: none;
+    }
+    
+    .navbar a:hover {
+        border: 2px solid rgb(253, 104, 129);
+        border-radius: 20px;
+    }
+    
+    .nav-item {
+        margin-left: 70px;
+        padding: 0 40px;
+    }
+    
+    .carousel-inner {
+        margin-top: 75px;
+    }
+    
+    .clearfix {
+        margin-top: 20px;
+    }
+    
+    .autor {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .modal-body a {
+        text-decoration: none;
+        color: grey;
+    }
+    
+    .modal-body a:hover {
+        color: red;
+    }
+    
+    #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+    }
+    
+    #myBtn:hover {
+        background: #ddd;
+        color: black;
+    }
+    
+    #myVideo {
+        width: 100%;
+        z-index: -1;
+    }
+    
+    .content {
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+    }
+    
+    footer {
+        color: black;
+        background-color: pink;
+        padding: 15px;
+    }
