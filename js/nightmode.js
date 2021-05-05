@@ -15,3 +15,17 @@ function Functionvideo() {
         btn.innerHTML = "Play";
     }
 }
+/* Are de scroll*/
+
+ScrollReveal().reveal('.clearfix', {
+    delay: 500,
+    duration: 500,
+    reset: true,
+    distance: '5px'
+});
+ScrollReveal().reveal('.texto', {
+    delay: 900,
+    duration: 500,
+    reset: true,
+    distance: '5px'
+});
