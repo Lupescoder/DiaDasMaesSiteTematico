@@ -18,14 +18,14 @@ function Functionvideo() {
 /* Are de scroll*/
 
 ScrollReveal().reveal('.clearfix', {
-    delay: 500,
+    delay: 300,
     duration: 500,
-    reset: true,
-    distance: '5px'
+    reset: false,
+    distance: '50px'
 });
 ScrollReveal().reveal('.texto', {
-    delay: 900,
+    delay: 500,
     duration: 500,
-    reset: true,
-    distance: '5px'
+    reset: false,
+    distance: '50px'
 });
